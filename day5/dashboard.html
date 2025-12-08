@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mobile Recharge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-lavender-50 min-h-screen">
+    <header class="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <h1 class="text-3xl font-bold mb-3">📱 Mobile Recharge Portal</h1>
+            <nav class="flex gap-6">
+                <a href="dashboard.html" class="hover:text-yellow-200 transition">Dashboard</a>
+                <a href="recharge.html" class="hover:text-yellow-200 transition">Recharge</a>
+                <a href="index.html" class="hover:text-yellow-200 transition">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <div class="flex items-center gap-4 mb-8">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="User" class="w-16 h-16">
+            <h2 class="text-4xl font-bold text-gray-800">User Dashboard</h2>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-8">
+            <article class="bg-white rounded-xl shadow-lg p-6 card-hover">
+                <h3 class="text-2xl font-bold text-pink-500 mb-4">Account Details</h3>
+                <div class="space-y-2 text-gray-700">
+                    <p><strong>Name:</strong> <span id="userName">John Doe</span></p>
+                    <p><strong>Email:</strong> <span id="userEmail">john@example.com</span></p>
+                    <p><strong>Mobile:</strong> <span id="userMobile">9876543210</span></p>
+                </div>
+            </article>
+            
+            <article class="bg-gradient-to-br from-pink-100 to-purple-100 rounded-xl shadow-lg p-6 card-hover">
+                <h3 class="text-2xl font-bold text-pink-500 mb-4">Quick Actions</h3>
+                <a href="recharge.html">
+                    <button class="w-full bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 text-white py-3 rounded-lg font-semibold hover:shadow-xl transform hover:scale-105 transition">
+                        New Recharge
+                    </button>
+                </a>
+            </article>
+        </div>
+        
+        <article class="bg-white rounded-xl shadow-lg p-6">
+            <h3 class="text-2xl font-bold text-pink-500 mb-4">Recharge History</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 text-white">
+                        <tr>
+                            <th class="px-4 py-3 text-left">Date</th>
+                            <th class="px-4 py-3 text-left">Mobile Number</th>
+                            <th class="px-4 py-3 text-left">Operator</th>
+                            <th class="px-4 py-3 text-left">Amount</th>
+                            <th class="px-4 py-3 text-left">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyBody" class="text-gray-700">
+                        <tr class="border-b hover:bg-pink-50">
+                            <td class="px-4 py-3" colspan="5" class="text-center text-gray-500">No recharge history yet</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-gray-800 text-white text-center py-6 mt-16">
+        <p>&copy; 2024 Mobile Recharge Portal. All rights reserved.</p>
+    </footer>
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fce7f3, #f3e8ff, #e0e7ff);
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+input:focus, select:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #9333ea;
+}
+
+.plan-card {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+    border-color: #f472b6;
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(244, 114, 182, 0.3);
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.success-message {
+    color: #16a34a;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
