@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', function() {
         document.getElementById('userMobile').textContent = userMobile;
     }
     
-    // Display history
+    
     const history = JSON.parse(localStorage.getItem('rechargeHistory') || '[]');
     const tbody = document.getElementById('historyBody');
     if (history.length > 0) {
