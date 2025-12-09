@@ -112,14 +112,13 @@ body {
     animation: pulse 2s infinite;
 }
 
-/* Glassmorphism effect */
 .glass {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Gradient text */
+
 .gradient-text {
     background: linear-gradient(135deg, #f472b6, #a78bfa, #818cf8);
     -webkit-background-clip: text;
@@ -137,12 +136,12 @@ body {
     animation: float 3s ease-in-out infinite;
 }
 
-/* Glow effect */
+
 .glow {
     box-shadow: 0 0 20px rgba(244, 114, 182, 0.5);
 }
 
-/* Ribbon badge */
+
 .ribbon {
     position: absolute;
     top: 10px;
