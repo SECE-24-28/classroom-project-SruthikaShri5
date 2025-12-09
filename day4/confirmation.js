@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
         <p><strong>Status:</strong> <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold">Success</span></p>
     `;
     
-    // Save to history
+    
     const history = JSON.parse(localStorage.getItem('rechargeHistory') || '[]');
     history.unshift({
         date: currentDate,
