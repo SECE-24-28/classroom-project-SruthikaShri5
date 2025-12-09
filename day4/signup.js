@@ -9,7 +9,7 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
     
     let isValid = true;
     
-    // Name validation
+    
     if (name.length < 3) {
         document.getElementById('nameError').textContent = 'Name must be at least 3 characters';
         isValid = false;
@@ -17,7 +17,7 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
         document.getElementById('nameError').textContent = '';
     }
     
-    // Email validation
+    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         document.getElementById('emailError').textContent = 'Please enter a valid email';
@@ -26,7 +26,7 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
         document.getElementById('emailError').textContent = '';
     }
     
-    // Mobile validation
+    
     const mobileRegex = /^[0-9]{10}$/;
     if (!mobileRegex.test(mobile)) {
         document.getElementById('mobileError').textContent = 'Please enter a valid 10-digit mobile number';
@@ -35,7 +35,7 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
         document.getElementById('mobileError').textContent = '';
     }
     
-    // Password validation
+   
     if (password.length < 6) {
         document.getElementById('passwordError').textContent = 'Password must be at least 6 characters';
         isValid = false;
@@ -43,7 +43,7 @@ document.getElementById('signupForm').addEventListener('submit', function(e) {
         document.getElementById('passwordError').textContent = '';
     }
     
-    // Confirm password validation
+   
     if (password !== confirmPassword) {
         document.getElementById('confirmPasswordError').textContent = 'Passwords do not match';
         isValid = false;
