@@ -6,7 +6,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     
     let isValid = true;
     
-    // Email validation
+   
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         document.getElementById('emailError').textContent = 'Please enter a valid email address';
@@ -15,7 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         document.getElementById('emailError').textContent = '';
     }
     
-    // Password validation
+    
     if (password.length < 6) {
         document.getElementById('passwordError').textContent = 'Password must be at least 6 characters';
         isValid = false;
