@@ -5,7 +5,7 @@ import { useAuth } from '../context/AuthContext';
 import OfferBanner from './OfferBanner';
 import ThemeToggle from './ThemeToggle';
 
-const Navbar = () => {
+const Navbar = () => { 
   const [isOpen, setIsOpen] = useState(false);
   const { user, logout } = useAuth();
   const location = useLocation();
