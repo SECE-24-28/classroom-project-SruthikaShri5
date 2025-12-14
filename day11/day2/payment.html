@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Mobile Recharge</title>
+</head>
+<body>
+    <header>
+        <h1>Mobile Recharge Portal</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="recharge.html">Recharge</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Payment</h2>
+            <article>
+                <h3>Order Summary</h3>
+                <p>Mobile Number: 9876543210</p>
+                <p>Operator: Airtel</p>
+                <p>Plan: ₹299 - 28 Days</p>
+                <p>Data: 2GB/day</p>
+                <p><strong>Total Amount: ₹299</strong></p>
+            </article>
+            
+            <form action="confirmation.html">
+                <h3>Payment Method</h3>
+                
+                <label>
+                    <input type="radio" name="payment-method" value="card" required>
+                    Credit/Debit Card
+                </label>
+                
+                <label>
+                    <input type="radio" name="payment-method" value="upi" required>
+                    UPI
+                </label>
+                
+                <label>
+                    <input type="radio" name="payment-method" value="wallet" required>
+                    Wallet
+                </label>
+                
+                <label>
+                    <input type="radio" name="payment-method" value="netbanking" required>
+                    Net Banking
+                </label>
+                
+                <button type="submit">Proceed to Pay</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Mobile Recharge Portal</p>
+    </footer>
+</body>
+</html>

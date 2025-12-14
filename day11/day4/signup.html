@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Mobile Recharge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-lavender-50 min-h-screen">
+    <header class="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <h1 class="text-3xl font-bold mb-3">📱 Mobile Recharge Portal</h1>
+            <nav class="flex gap-6">
+                <a href="index.html" class="hover:text-yellow-200 transition">Home</a>
+                <a href="login.html" class="hover:text-yellow-200 transition">Login</a>
+                <a href="signup.html" class="hover:text-yellow-200 transition">Signup</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-16">
+        <section class="max-w-md mx-auto bg-white rounded-xl shadow-2xl p-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Create Account</h2>
+            <form id="signupForm" class="space-y-5">
+                <div>
+                    <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name:</label>
+                    <input type="text" id="name" name="name" required 
+                           class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-400 transition">
+                    <div id="nameError" class="error-message"></div>
+                </div>
+                
+                <div>
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" required 
+                           class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-400 transition">
+                    <div id="emailError" class="error-message"></div>
+                </div>
+                
+                <div>
+                    <label for="mobile" class="block text-gray-700 font-semibold mb-2">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required 
+                           class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-400 transition">
+                    <div id="mobileError" class="error-message"></div>
+                </div>
+                
+                <div>
+                    <label for="password" class="block text-gray-700 font-semibold mb-2">Password:</label>
+                    <input type="password" id="password" name="password" required 
+                           class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-400 transition">
+                    <div id="passwordError" class="error-message"></div>
+                </div>
+                
+                <div>
+                    <label for="confirm-password" class="block text-gray-700 font-semibold mb-2">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required 
+                           class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-pink-400 transition">
+                    <div id="confirmPasswordError" class="error-message"></div>
+                </div>
+                
+                <button type="submit" 
+                        class="w-full bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 text-white py-3 rounded-lg font-semibold hover:shadow-xl transform hover:scale-105 transition">
+                    Sign Up
+                </button>
+            </form>
+            <p class="text-center mt-6 text-gray-600">
+                Already have an account? <a href="login.html" class="text-pink-500 font-semibold hover:underline">Login</a>
+            </p>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white text-center py-6 mt-16">
+        <p>&copy; Mobile Recharge Portal</p>
+    </footer>
+    <script src="signup.js"></script>
+</body>
+</html>

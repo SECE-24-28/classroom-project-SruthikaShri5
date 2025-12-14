@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge - Mobile Recharge</title>
+</head>
+<body>
+    <header>
+        <h1>Mobile Recharge Portal</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="recharge.html">Recharge</a>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Mobile Recharge</h2>
+            <form action="plans.html">
+                <label for="mobile-number">Mobile Number:</label>
+                <input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter 10 digit mobile number" required>
+                
+                <label for="operator">Select Operator:</label>
+                <select id="operator" name="operator" required>
+                    <option value="">Choose Operator</option>
+                    <option value="airtel">Airtel</option>
+                    <option value="jio">Jio</option>
+                    <option value="vi">Vi (Vodafone Idea)</option>
+                    <option value="bsnl">BSNL</option>
+                </select>
+                
+                <label for="plan-type">Plan Type:</label>
+                <select id="plan-type" name="plan-type" required>
+                    <option value="">Choose Plan Type</option>
+                    <option value="prepaid">Prepaid</option>
+                    <option value="postpaid">Postpaid</option>
+                </select>
+                
+                <button type="submit">Browse Plans</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Mobile Recharge Portal</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Employee Details</title>
+    </head>
+    <style>
+        body{
+            background: linear-gradient(to right, lavender, lightblue);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+        }
+         h3 {
+        color: black;
+        margin-bottom: 20px;
+    }
+        form{
+            color: black;
+            margin-top: 100px;
+            text-align: center;
+            justify-content: center;
+        }
+        button{
+            color :rgb(36, 110, 109);
+            margin-top: 20px;
+            transition: 0.3s ease
+        }
+        button:hover {
+            background: lightpink;
+            transform: scale(1.08);
+}
+    </style>
+    <body>
+        <form>
+            <div class="box">
+            <h3>EMPLOYEE FORM</h3>
+            Name : <input type="text" id="n" placeholder="Enter Your Name" /><br /><br />
+            Department :
+            <select id="d">
+                <option>HR</option>
+                <option>GM</option>
+                <option>M</option>
+            </select><br><br>
+            Salary : <input type="number" id="s" placeholder="Enter Your Salary"/><br><br>
+        <button onclick = clickHandler()>Submit</button>
+        </div>
+         </form>
+        <script>
+            function clickHandler() {
+                let name = document.getElementById("n").value;
+                let department = document.getElementById("d").value;
+                let salary = parseFloat(document.getElementById("s").value);
+                if(name == ""){
+                    alert("Enter your name to check");
+                    return false;
+                }
+                if(isNaN(salaryv) || salary < 0.00){
+                    alert ("Enter a valid salary");
+                    return false;
+                }
+                let HRA = salary * (10/100);
+                let PF = salary * (5/100);
+                let netsalary = (salary + HRA - PF);
+                 alert("Name : " + name);
+                 alert("Department : " +department);
+                 alert("Your Net Salary is : "+netsalary); 
+            }
+        </script>
+    </body>
+</html>

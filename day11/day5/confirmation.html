@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation - Mobile Recharge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-lavender-50 min-h-screen">
+    <header class="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <h1 class="text-3xl font-bold mb-3">📱 Mobile Recharge Portal</h1>
+            <nav class="flex gap-6">
+                <a href="dashboard.html" class="hover:text-yellow-200 transition">Dashboard</a>
+                <a href="recharge.html" class="hover:text-yellow-200 transition">Recharge</a>
+                <a href="index.html" class="hover:text-yellow-200 transition">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-16">
+        <section class="max-w-2xl mx-auto bg-white rounded-xl shadow-2xl p-8 text-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/5610/5610944.png" alt="Success" class="w-24 h-24 mx-auto mb-4">
+            <h2 class="text-4xl font-bold text-green-600 mb-6">Recharge Successful!</h2>
+            
+            <article class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-lg p-6 mb-6 text-left">
+                <h3 class="text-2xl font-bold text-pink-500 mb-4">Transaction Details</h3>
+                <div id="transactionDetails" class="space-y-2 text-gray-700"></div>
+            </article>
+            
+            <div class="flex gap-4 justify-center">
+                <a href="dashboard.html">
+                    <button class="bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-xl transform hover:scale-105 transition">
+                        Go to Dashboard
+                    </button>
+                </a>
+                <a href="recharge.html">
+                    <button class="bg-white border-2 border-pink-400 text-pink-500 px-6 py-3 rounded-lg font-semibold hover:bg-pink-50 transition">
+                        New Recharge
+                    </button>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white text-center py-6 mt-16">
+        <p>&copy; Mobile Recharge Portal</p>
+    </footer>
+    <script src="confirmation.js"></script>
+</body>
+</html>
